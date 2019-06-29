@@ -1,4 +1,4 @@
-FROM marketplace.gcr.io/google/bazel:latest AS build-env
+FROM marketplace.gcr.io/google/bazel:0.25.0 AS build-env
 RUN apt-get update && apt-get install --no-install-recommends -y bison flex
 RUN mkdir /work
 WORKDIR /work
